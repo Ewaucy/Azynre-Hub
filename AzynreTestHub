@@ -1,4 +1,6 @@
 
+-- Game Saitama Battleground 
+-- Id 10449761463
 
 if (game.PlaceId == 10449761463) then
     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
@@ -35,7 +37,18 @@ if (game.PlaceId == 10449761463) then
 			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
 		end    
 	})
-
+    Tab0:AddSlider({
+		Name = "Jump Power",
+		Min = 16,
+		Max = 200,
+		Default = 5,
+		Color = Color3.fromRGB(255,255,255),
+		Increment = 1,
+		ValueName = "Power",
+		Callback = function(v)
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+		end    
+	})
 
 
     --Credits--
