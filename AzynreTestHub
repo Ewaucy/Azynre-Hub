@@ -1,0 +1,54 @@
+if (game.PlaceId == 10449761463) then
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+    local Window = OrionLib:MakeWindow({Name = "Azynre Hub", HidePremium = true, SaveConfig = true, ConfigFolder = "Azynrehub", Icon= "rbxassetid://12426573669", IntroIcon = "rbxassetid://12426573669", IntroText ="AzynreHub"})
+    
+    OrionLib:MakeNotification({
+    Name = "Azynre Notification!",
+    Content = "Hello welcome to Azynre Hub",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+    })
+    --Main--
+    local Tab = Window:MakeTab({
+        Name = "Main",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = true
+    })
+    
+    --Player
+	local Tab0 = Window:MakeTab({
+        Name = "Player",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+	Tab0:AddSlider({
+		Name = "Walk Speed",
+		Min = 16,
+		Max = 200,
+		Default = 5,
+		Color = Color3.fromRGB(255,255,255),
+		Increment = 1,
+		ValueName = "Speed",
+		Callback = function(v)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+		end    
+	})
+
+
+
+    --Credits--
+    local Tab2 = Window:MakeTab({
+        Name = "Credits",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    Tab2:AddButton({
+        Name = "Discord Copy",
+        Callback = function()
+		end
+    })
+	OrionLib:Init()
+        
+else
+     game.Players.LocalPlayer:kick("This game is not supported 😂😂")
+end
