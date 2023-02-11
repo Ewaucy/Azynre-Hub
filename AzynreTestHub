@@ -16,7 +16,7 @@ if (game.PlaceId == 10449761463) then
     local Tab = Window:MakeTab({
         Name = "Main",
         Icon = "rbxassetid://4483345998",
-        PremiumOnly = true
+        PremiumOnly = false
     })
     
     --Player
@@ -66,6 +66,19 @@ if (game.PlaceId == 10449761463) then
     })
 	OrionLib:Init()
         
+    -- credits
+    local credits = Window:MakeTab({
+        Name = "Credits",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+    })
+    credits:AddButton({
+        Name = "Button!",
+        Callback = function()
+                  print("button pressed")
+          end    
+    })
+
 else
      game.Players.LocalPlayer:kick("This game is not supported 😂😂")
 end
