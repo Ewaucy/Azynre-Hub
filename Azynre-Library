@@ -1,0 +1,156 @@
+
+-- Instances: 21 | Scripts: 0 | Modules: 0
+local G2L = {};
+
+-- StarterGui.Azynre Hub
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[Azynre Hub]];
+
+-- StarterGui.Azynre Hub.Main
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["2"]["Size"] = UDim2.new(0, 580, 0, 304);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["2"]["Position"] = UDim2.new(0.2583105266094208, 0, 0.32170167565345764, 0);
+G2L["2"]["Name"] = [[Main]];
+
+-- StarterGui.Azynre Hub.Main.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+
+
+-- StarterGui.Azynre Hub.Main.DropShadowHolder
+G2L["4"] = Instance.new("Frame", G2L["2"]);
+G2L["4"]["ZIndex"] = 0;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundTransparency"] = 1;
+G2L["4"]["Size"] = UDim2.new(1.0026401281356812, 0, 1.0002548694610596, 0);
+G2L["4"]["Position"] = UDim2.new(0.00005333987792255357, 0, 5.019338544798302e-08, 0);
+G2L["4"]["Name"] = [[DropShadowHolder]];
+
+-- StarterGui.Azynre Hub.Main.DropShadowHolder.DropShadow
+G2L["5"] = Instance.new("ImageLabel", G2L["4"]);
+G2L["5"]["ZIndex"] = 0;
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
+G2L["5"]["ScaleType"] = Enum.ScaleType.Slice;
+G2L["5"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["ImageTransparency"] = 1;
+G2L["5"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["5"]["Image"] = [[rbxassetid://6015897843]];
+G2L["5"]["Size"] = UDim2.new(1, 47, 1, 47);
+G2L["5"]["Name"] = [[DropShadow]];
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+-- StarterGui.Azynre Hub.Main.MainMenu
+G2L["6"] = Instance.new("Frame", G2L["2"]);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(32, 32, 32);
+G2L["6"]["Size"] = UDim2.new(0, 538, 0, 251);
+G2L["6"]["Position"] = UDim2.new(0.02965288981795311, 0, 0.1373559981584549, 0);
+G2L["6"]["Name"] = [[MainMenu]];
+
+-- StarterGui.Azynre Hub.Main.MainMenu.UICorner
+G2L["7"] = Instance.new("UICorner", G2L["6"]);
+
+
+-- StarterGui.Azynre Hub.Main.MainMenu.HomeButtontab
+G2L["8"] = Instance.new("Frame", G2L["6"]);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["8"]["Size"] = UDim2.new(0, 100, 0, 240);
+G2L["8"]["Position"] = UDim2.new(0.011152416467666626, 0, 0.019920319318771362, 0);
+G2L["8"]["Name"] = [[HomeButtontab]];
+
+-- StarterGui.Azynre Hub.Main.MainMenu.HomeButtontab.UICorner
+G2L["9"] = Instance.new("UICorner", G2L["8"]);
+
+
+-- StarterGui.Azynre Hub.Main.MainMenu.HomeButtontab.UIListLayout
+G2L["a"] = Instance.new("UIListLayout", G2L["8"]);
+G2L["a"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+-- StarterGui.Azynre Hub.Main.MainMenu.HomeButtontab.TextLabel
+G2L["b"] = Instance.new("TextLabel", G2L["8"]);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
+G2L["b"]["Text"] = [[Main]];
+G2L["b"]["Font"] = Enum.Font.Unknown;
+G2L["b"]["BackgroundTransparency"] = 0.8999999761581421;
+G2L["b"]["Position"] = UDim2.new(0, 0, 0.125, 0);
+
+-- StarterGui.Azynre Hub.Main.MainMenu.HomeButtontab.TextLabel.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["b"]);
+
+
+-- StarterGui.Azynre Hub.Main.MainMenu.Menuwork
+G2L["d"] = Instance.new("Frame", G2L["6"]);
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["d"]["Size"] = UDim2.new(0, 411, 0, 240);
+G2L["d"]["Position"] = UDim2.new(0.22118958830833435, 0, 0.019920319318771362, 0);
+G2L["d"]["Name"] = [[Menuwork]];
+
+-- StarterGui.Azynre Hub.Main.MainMenu.Menuwork.UICorner
+G2L["e"] = Instance.new("UICorner", G2L["d"]);
+
+
+-- StarterGui.Azynre Hub.Main.MainMenu.Menuwork.ScrollingFrame
+G2L["f"] = Instance.new("ScrollingFrame", G2L["d"]);
+G2L["f"]["Active"] = true;
+G2L["f"]["ElasticBehavior"] = Enum.ElasticBehavior.Never;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(29, 29, 29);
+G2L["f"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y;
+G2L["f"]["Size"] = UDim2.new(0, 380, 0, 200);
+G2L["f"]["ScrollBarImageColor3"] = Color3.fromRGB(100, 100, 100);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(29, 29, 29);
+G2L["f"]["Position"] = UDim2.new(0.035888075828552246, 0, 0.13350000977516174, 0);
+
+-- StarterGui.Azynre Hub.Main.MainMenu.Menuwork.ScrollingFrame.UICorner
+G2L["10"] = Instance.new("UICorner", G2L["f"]);
+
+
+-- StarterGui.Azynre Hub.Main.MainMenu.Menuwork.TextLabel
+G2L["11"] = Instance.new("TextLabel", G2L["d"]);
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(29, 29, 29);
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["Size"] = UDim2.new(0, 380, 0, 21);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(29, 29, 29);
+G2L["11"]["Text"] = [[Main]];
+G2L["11"]["Font"] = Enum.Font.Unknown;
+G2L["11"]["Position"] = UDim2.new(0.035888079553842545, 0, 0.02083333395421505, 0);
+
+-- StarterGui.Azynre Hub.Main.UI Library
+G2L["12"] = Instance.new("TextLabel", G2L["2"]);
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["TextSize"] = 28;
+G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["Size"] = UDim2.new(0, 175, 0, 34);
+G2L["12"]["Text"] = [[UI Library]];
+G2L["12"]["Name"] = [[UI Library]];
+G2L["12"]["Font"] = Enum.Font.Arcade;
+G2L["12"]["BackgroundTransparency"] = 1;
+G2L["12"]["Position"] = UDim2.new(0.10704538971185684, 0, 0.0053967926651239395, 0);
+
+-- StarterGui.Azynre Hub.Main.ImageLabel
+G2L["13"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["Image"] = [[rbxassetid://12462600232]];
+G2L["13"]["Size"] = UDim2.new(0, 104, 0, 67);
+G2L["13"]["BackgroundTransparency"] = 1;
+G2L["13"]["Position"] = UDim2.new(-0.03184886276721954, 0, -0.04971173033118248, 0);
+
+-- StarterGui.Azynre Hub.Main.Exit
+G2L["14"] = Instance.new("Frame", G2L["2"]);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["Size"] = UDim2.new(0, 18, 0, 18);
+G2L["14"]["Position"] = UDim2.new(0.9572390913963318, 0, 0.029605263844132423, 0);
+G2L["14"]["Name"] = [[Exit]];
+
+-- StarterGui.Azynre Hub.Main.Exit.Exit
+G2L["15"] = Instance.new("UICorner", G2L["14"]);
+G2L["15"]["Name"] = [[Exit]];
+
+
+return G2L["1"], require;
